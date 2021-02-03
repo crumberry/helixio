@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121641017-4"></script><script src="js/googleAnalytics.js"></script>
+        <title>Sanara</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/commands.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+        <meta property="og:title" content="Sanara"/>
+        <meta property="og:description" content="List of commands"/>
+        <meta property="og:image" content="https://sanara.zirk.eu/img/Sanara.png"/>
+    </head>
+    <body>
+        <ul id="menu">
+            <li><a href="index.html"><img alt="Back" src="img/Back.png"></a></li>
+        </ul>
+        <command-menu>
+            <ul>
+                <li onclick="displayAdministration()">Administration</li>
+                <li onclick="displayEntertainment()">Entertainment</li>
+                <li onclick="displayGame()">Game</li>
+                <li onclick="displayNSFW()">NSFW</li>
+                <li onclick="displayRadio()">Radio</li>
+                <li onclick="displayTool()">Tool</li>
+            </ul>
+        </command-menu>
+        <nav id="table">
+            <p>🡄&emsp;Click on a module to display information about it</p>
+        </nav>
+        <table id="tableHelp" hidden>
+            <thead>
+                <th>Name</th>
+                <th>Arguments</th>
+                <th>Description</th>
+                <th>Restriction</th>
+                <th>Example</th>
+            </thead>
+            <tbody id="Administration" hidden>
+            </tbody>
+            <tbody id="Entertainment" hidden>
+            </tbody>
+            <tbody id="Game" hidden>
+            </tbody>
+            <tbody id="Nsfw" hidden>
+            </tbody>
+            <tbody id="Radio" hidden>
+            </tbody>
+            <tbody id="Tool" hidden>
+            </tbody>
+        </table>
+    </body>
+    <script type="text/javascript" src="js/commands.js"></script>
+</html>
